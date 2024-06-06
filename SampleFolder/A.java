@@ -1,4 +1,4 @@
-package chapter1;
+package SampleFolder;
 
 
 class M{
@@ -9,6 +9,7 @@ class M{
     
 }
 public class A{
+    public String msg = "message from class A";
     static public  void main(String[] marco) {
         M m = new M();
         A a = new A();

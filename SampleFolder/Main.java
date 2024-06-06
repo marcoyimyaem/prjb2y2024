@@ -1,4 +1,4 @@
-package chapter1;
+package SampleFolder;
 
 /**
  * Plant - this is a plant object use to create or 

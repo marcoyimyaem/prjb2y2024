@@ -1,6 +1,7 @@
 package chapter2;
 
 
+import SampleFolder.A;
 import chapter1.*;
 
 // import chapter1.B; //error
