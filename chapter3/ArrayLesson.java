@@ -1,7 +1,7 @@
 package chapter3;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+
+import java.util.*;
 
 public class ArrayLesson {
     public static void main(String[] args) {
@@ -12,5 +12,9 @@ public class ArrayLesson {
         for (String numbstring : numbStrings) {
             System.out.println(numbstring);
         }
+        System.out.println("enter a number");
+        Scanner input1 = new Scanner(System.in);
+        int y = input1.nextInt();
+        System.out.println(y+" multiply by zero is" + (y*0));
     }
 }
