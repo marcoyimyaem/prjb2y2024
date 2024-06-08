@@ -20,8 +20,19 @@ public class LoopStatement {
         // for(datatype instance: collection){
         // body
         //}
-        for(String color:colors)
+LOOP_FOR_COLORS:        for(String color:colors)
             System.out.println(color);
      
+    
+OUTER_LOOP:    for(int i = 1;i<=5;i++){
+INNER_LOOP:        for(int j = 1;j<=5;j++){
+IF_BREAKER:                        if(i+j==7){
+                            // break OUTER_LOOP;
+                            continue INNER_LOOP;
+                            
+                        }
+                        System.out.println("i ="+i+"\tj = "+j+"\ti+j="+(i+j));
+            }
+        }
     }
 }

@@ -1,6 +1,13 @@
 package chapter1;
 class ReferenceLesson{
     // int public = 10; java reserved word
+    //Valid java main() entry points public and static is reversable 
+    // public static void main(String[] asdasd)
+    // public static void main(String asdasd[])
+    // public static void main(String... asdasd)
+    // public static void main(String... _args)
+    // public static void main(String... $args)
+    
     public static void main(String[] args) {
         String one, two;
         one = new String("a");
