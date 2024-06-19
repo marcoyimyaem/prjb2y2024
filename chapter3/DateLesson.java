@@ -31,7 +31,7 @@ public class DateLesson {
         System.out.println(date1Now.getDayOfWeek());
         // time get | Hour Minute Second Nano
         System.out.println(time1Now.getHour());
-        System.out.println(ldt1Now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+        //System.out.println(ldt1Now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
     }   
 
 }
