@@ -1,11 +1,10 @@
 package chapter4;
-
 import java.util.*;
 
-public class LambdaLesson {
-    static void print(List<Animal> animals, CheckTrait check){
+public class PredicateLambda {
+ static void print(List<Animal> animals, Predicate<Animal> checker){
         for(Animal animal:animals){
-            if(check.test(animal)){
+            if(checker.test(animal)){
                 System.out.print(animal+ ", ");
             }
             
