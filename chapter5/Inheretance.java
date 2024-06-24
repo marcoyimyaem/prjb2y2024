@@ -76,6 +76,9 @@ class Aso extends Sample2 implements CanBurrow,CanHunt{
     public int getMin_dmg() {
         return min_dmg;
     }
+    public static void main(String[] args) {
+        CanHunt.msg();
+    }
 }
 interface CanBurrow {
     int MINIMUM_DEPTH = 2;
@@ -85,4 +88,52 @@ interface CanBurrow {
 interface CanHunt{
     int min_dmg=100;
     int getMin_dmg();
+    public  default float getTemp(){
+        return 30;
+    }
+    static String msg(){
+        return "";
+    }
 }
+abstract class Primate{
+    String name;
+    void setName(String name){
+        this.name = name;
+    }
+    Primate(String name){
+        this.name = name;
+    }
+    abstract boolean hasHair();
+}
+interface HasTail{
+    boolean isTailStriped();
+}
+
+class Lemur extends Primate implements HasTail{
+    Lemur(String name) {
+        super(name);
+        
+    }
+    int age = 10;
+    @Override
+    public boolean isTailStriped() {
+        return true;}
+
+    @Override
+    boolean hasHair() {
+        return true;}
+    public static void main(String[] args) {
+        Lemur lemur = new Lemur("Marco");
+        System.out.println(lemur.hasHair());
+        System.out.println(lemur.isTailStriped());
+        Primate primate = lemur;
+        System.out.println(primate.hasHair());
+        // System.out.println(primate.isTailStriped());
+        HasTail hasTail = lemur;
+        // System.out.println(hasTail.hasHair());
+        System.out.println(hasTail.isTailStriped());
+        // System.out.println(primate.age);
+        // System.out.println(hasTail.age);
+    }
+    }
+    
